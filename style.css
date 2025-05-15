@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color:white;
+}
+
+
+.title-container{
+padding-top:1vw;
+background-color: rgb(15, 11, 32);
+display:flex;
+justify-content: space-around;
+border-bottom:0.1vw solid grey;
+font-family:monospace;
+font-size: 2rem;
+text-align: center;
+
+}
+
+
+.title-container .imgg.me{
+     animation: spin 7s linear infinite, color-change 2s infinite;
+
+}
+
+
+.title-container div{
+    background-color: rgb(15, 11, 32);
+}
+
+.imgg{
+    flex:1;
+    border-radius: 6vw;
+    max-width: 12vw;
+    min-width: 12vw;
+    max-height: 12vw;
+    min-height: 12vw;
+    object-fit: fill;
+     border:2px solid transparent;
+}
+
+.play-container{
+    display:flex;
+    flex-direction: column;;
+    justify-content: flex-start;
+   
+    height: 100vh;
+  
+    gap:4rem;
+}
+
+
+.play-button.running{
+    display: none;
+  
+}
+
+
+.rps.running img.not{
+    visibility: hidden;
+}
+
+.rps.running img.selected{
+    visibility: visible;
+    display:block;
+}
+
+.rps.running.started img.selected{
+    animation: fade 4s ease-in-out forwards;
+    
+}
+
+
+
+
+
+@keyframes fade {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+
+
+.play-button{
+    border-top:2px solid grey;
+    border-left:2px solid grey;
+    margin-top: 5vh;
+    align-self: center;
+    height:3vh;
+    width: 9vh;
+    margin-bottom:-4vh;
+    transition: all 2s ease-in-out;
+    color:white;
+    background-color: black;
+   
+}
+
+.play-button:hover{
+    border: 3px solid red;
+
+}
+
+
+
+
+.title-container img:hover{
+    animation: spin 7s linear infinite, color-change 2s infinite;
+}
+
+.rps .selected{
+    animation: spin 7s linear infinite, color-change 2s infinite;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+@keyframes color-change {
+    0% { filter: hue-rotate(0deg); border: 2px solid red }
+    50% { filter: hue-rotate(180deg); border:2px solid green }
+    100% { filter: hue-rotate(360deg); border:2px solid blue }
+  }
+
+
+
+
+
+
+
+.play-text{
+   padding-top:2vh;
+    font-size: 4vh;
+  
+}
+
+
+
+
+.play-container div{
+
+    align-self: center;
+
+}
+
+.play-container .rps{
+   
+   
+    display:flex;
+    justify-content: center;
+    gap:7rem;
+    
+
+}
+
+.score.text{
+
+     font-size: 4vh;
+}
+
+.score.value{
+  
+     font-size: 3vh;
+}
+
+
+.footer{
+     border:2px solid grey;
+}
