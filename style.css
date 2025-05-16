@@ -3,6 +3,7 @@
     padding: 0;
     background-color: black;
     color:white;
+    trabsition: all 1s ease-in-out;
 }
 
 
@@ -163,6 +164,30 @@ text-align: center;
   
      font-size: 3vh;
 }
+
+
+
+
+@media screen and (max-width: 420px) {
+   .play-text{
+       font-size: 3.1vh;
+   }
+  
+   
+   .play-container div.rps .imgg{
+   
+    margin-right:-4vh;
+    margin-left:-4vh;
+
+   }
+   
+}
+
+
+
+
+
+
 
 
 .footer{
