@@ -1,15 +1,15 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: black;
-    color:white;
-    trabsition: all 1s ease-in-out;
+    background-color: #C5C6C7;
+    color: #66FCF1;
+    transition: all 1s ease-in-out;
 }
 
 
 .title-container{
 padding-top:1vw;
-background-color: rgb(15, 11, 32);
+background-color: #0B0C10;
 display:flex;
 justify-content: space-around;
 border-bottom:0.1vw solid grey;
@@ -27,7 +27,7 @@ text-align: center;
 
 
 .title-container div{
-    background-color: rgb(15, 11, 32);
+    background-color: #0B0C10;
 }
 
 .imgg{
@@ -142,6 +142,7 @@ text-align: center;
 .play-container div{
 
     align-self: center;
+    color: #0B0C10;
 
 }
 
